@@ -49,7 +49,6 @@ class App extends Component {
         <div className="navbar-panel">
           <NavBar topSearchBar={this.state.topSearchBar} middleSearchBar={this.state.middleSearchBar}/>
         </div>
-
         <div id="wrapper" className="">
           <SideNav/>
           <div id="page-content-wrapper">
