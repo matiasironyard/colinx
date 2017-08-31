@@ -120,6 +120,10 @@ body {
   margin: 8px;
 }
 
+.form-control{
+  border-radius: 0;
+}
+
 input {
   border-radius: 0;
 }

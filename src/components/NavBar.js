@@ -86,7 +86,7 @@ class NavBar extends Component {
 
         <nav className='navbar navbar-default  middle-nav hidden-xs'>
           <div className="container-fluid">
-            <div className="col-xs-6 col-xs-offset-3">
+            <div className="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
               <h1 className="logo">Supplier</h1>
               <form className={`form-horizontal ${this.props.middleSearchBar}`}>
                 <div className="form-group">
