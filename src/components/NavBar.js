@@ -25,7 +25,7 @@ class NavBar extends Component {
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <h4 className={`logo top-search col-xs-3 ${this.props.topSearchBar}`}>Supplier's Logo</h4>
-              <div className="col-xs-6">
+              <div className="col-xs-4 col-xs-offset-1 col-lg-4 col-lg-offset-1">
 
                 <form className={`form-horizontal navbar-left top-search ${this.props.topSearchBar}`}>
 
