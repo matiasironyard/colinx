@@ -1,6 +1,12 @@
 body {
   overflow-x: hidden;
   padding-top: 70px;
+  margin: 0 auto;
+}
+
+.no-gutters{
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #wrapper {
@@ -45,9 +51,10 @@ body {
   margin-right: -250px;
 }
 
-.navbar{
-  margin-bottom:0;
+.navbar {
+  margin-bottom: 0;
 }
+
 
 /* Sidebar Styles */
 
@@ -60,39 +67,44 @@ body {
   list-style: none;
 }
 
-.navbar-panel{
+.navbar-panel {
   position: relative;
   top: -20px;
 }
-.navbar{
+
+.navbar {
   border: 0px;
 }
-.logo{
 
+.logo {}
+
+.top-nav {
+  border-radius: 0px;
 }
-.top-nav{
-    border-radius: 0px;
-}
+
 .middle-nav {
   padding-top: 40px;
-      padding-bottom: 75px;
-      background-color: white;
-      background-image: url("../images/gears.png");
-      background-repeat: no-repeat;
-      background-position: right;
+  padding-bottom: 75px;
+  background-color: white;
+  background-image: url("../images/gears.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
-.bottom-nav{
+
+.bottom-nav {
   box-shadow: 0px 2px 4px grey;
   border-radius: 0px;
 }
- .main-nav-scrolled {
+
+.main-nav-scrolled {
   position: fixed;
-width: 100%;
-margin-top: -240px;
-z-index: 1;
+  width: 100%;
+  margin-top: -240px;
+  z-index: 1;
+  width: 102%;
 }
 
-.navbar-form{
+.navbar-form {
   border: 0;
 }
 
@@ -100,15 +112,32 @@ z-index: 1;
   margin: 8px;
 }
 
-input{
+input {
   border-radius: 0;
 }
 
-.middle-nav-input-group{
-      box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.63)
+.middle-nav-input-group {
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.63)
 }
 
-h1{
+h1 {
   text-align: center;
   padding-bottom: 50px;
+}
+.top-search{
+  animation: fadein 300ms;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.hidden{
+transition: visibility 0s 2s, opacity 2s linear;
+}
+
+@keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

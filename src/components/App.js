@@ -15,13 +15,14 @@ class App extends Component {
   }
 
   componentDidMount() {
-    $("#menu-toggle").click(function(e) {
+    $("#menu-toggle").click((e)=> {
       e.preventDefault();
-      console.log('hi')
       $("#wrapper").toggleClass("toggled");
     });
+
     let  mn = $(".bottom-nav"),
         src = $(".top-search"),
+        mdl = $(".middle-nav"),
         mns = "main-nav-scrolled",
         hdr = $('.middle-nav').height();
         console.log('hdr', hdr)
@@ -37,27 +38,25 @@ class App extends Component {
       } else{
         mn.removeClass(mns);
         self.setState({topSearchBar: "hidden", middleSearchBar: "show"})
-
       }
     });
+
   }
 
   render() {
-    console.log('state', this.state)
     return (
-      <div>
+      <div className="container-fluid no-gutters">
         <div className="navbar-panel">
           <NavBar topSearchBar={this.state.topSearchBar} middleSearchBar={this.state.middleSearchBar}/>
         </div>
-
 
         <div id="wrapper" className="">
           <SideNav/>
           <div id="page-content-wrapper">
             <Main/>
-
           </div>
         </div>
+
       </div>
     );
   }

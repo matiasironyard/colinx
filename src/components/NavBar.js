@@ -24,7 +24,7 @@ class NavBar extends Component {
             </div>
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <h4 className={`logo col-xs-3 ${this.props.topSearchBar}`}>Supplier's Logo</h4>
+              <h4 className={`logo top-search col-xs-3 ${this.props.topSearchBar}`}>Supplier's Logo</h4>
               <div className="col-xs-6">
 
                 <form className={`form-horizontal navbar-left top-search ${this.props.topSearchBar}`}>
@@ -106,7 +106,7 @@ class NavBar extends Component {
           </div>
         </nav>
 
-        <nav className='navbar navbar-default  bottom-nav hidden-xs'>
+        <nav className='row navbar navbar-default  bottom-nav hidden-xs'>
           <div className="container-fluid">
             <div className="row">
               <ul className="nav nav-pills nav-justified">
