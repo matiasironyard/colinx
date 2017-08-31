@@ -32,7 +32,7 @@ class App extends Component {
       if( $(this).scrollTop() < 50 ) {
         self.setState({topSearchBar: "hidden", middleSearchBar: "show"})
       }
-      if( $(this).scrollTop() > hdr ) {
+      if( $(this).scrollTop() > 300) {
         mn.addClass(mns);
         self.setState({topSearchBar: "show", middleSearchBar: "hidden"})
       } else{
