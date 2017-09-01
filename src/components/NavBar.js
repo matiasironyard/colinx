@@ -11,7 +11,7 @@ class NavBar extends Component {
           <div className="container-fluid">
 
             <div className="navbar-header">
-              <span className="logo hidden-lg hidden-md hidden-sm">Supplier's Logo</span>
+              <span className="logo hidden-lg hidden-md hidden-sm">LOGO</span>
               <button type="button" className="navbar-toggle collapsed">
                 <a href="#menu-toggle" className="btn btn-secondary menu-toggle" id="menu-toggle">
                   <span className="sr-only">Toggle navigation</span>
@@ -24,7 +24,7 @@ class NavBar extends Component {
             </div>
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <h4 className={`logo top-search col-xs-3 ${this.props.topSearchBar}`}>Supplier's Logo</h4>
+              <h4 className={`logo top-search col-xs-3 ${this.props.topSearchBar}`}>LOGO</h4>
               <div className="col-xs-6  col-lg-6 ">
 
                 <form className={`form-horizontal navbar-left top-search ${this.props.topSearchBar}`}>
@@ -49,7 +49,7 @@ class NavBar extends Component {
                   <a href="/" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <a href="/">
                       <i className="fa fa-map-marker" aria-hidden="true"></i>
-                      123456</a>
+                      Store</a>
                     <span className="caret"></span>
                   </a>
                   <ul className="dropdown-menu">
@@ -87,7 +87,7 @@ class NavBar extends Component {
         <nav className='navbar navbar-default  middle-nav hidden-xs'>
           <div className="container-fluid">
             <div className="col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
-              <h1 className="logo">Supplier</h1>
+              <h1 className="logo">LOGO</h1>
               <form className={`form-horizontal ${this.props.middleSearchBar}`}>
                 <div className="form-group middle-search-form-group">
                   <div className="">
@@ -112,27 +112,27 @@ class NavBar extends Component {
               <ul className="nav nav-pills nav-justified">
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Item 1</a>
+                  <a href="/">Link</a>
                 </li>
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Item 2</a>
+                  <a href="/">Link</a>
                 </li>
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Item 3</a>
+                  <a href="/">Link</a>
                 </li>
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Item 4</a>
+                  <a href="/">Link</a>
                 </li>
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Item 5</a>
+                  <a href="/">Link</a>
                 </li>
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Item 6</a>
+                  <a href="/">Link</a>
                 </li>
 
               </ul>

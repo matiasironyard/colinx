@@ -28,11 +28,12 @@ class App extends Component {
 
     window.onscroll = () => {
       if (middleNav.getBoundingClientRect().bottom <= 132) {
-        topNav.style.backgroundColor = "#f8f8f8";
+        topNav.classList.add('top-nav-fade')
         this.setState({topSearchBar: "show"})
       } else {
         this.setState({topSearchBar: "hidden"})
-        topNav.style.backgroundColor = "rgba(248, 248, 248, 0.5)";
+        topNav.classList.remove('top-nav-fade')
+        //topNav.style.backgroundColor = "rgba(248, 248, 248, 0.5)";
       }
       if (window.pageYOffset > 270) {
         bottomNav.classList.add('fixed-bottom-nav');

@@ -6,6 +6,7 @@ body {
 
 .fa {
   font-size: 20px;
+  padding: 0 5px 0 5px;
 }
 
 .no-gutters {
@@ -65,7 +66,7 @@ body {
 }
 
 .navbar-default {
-  background-color: rgba(248, 248, 248, 0.5);
+  //background-color: rgba(248, 248, 248, 0.5);
 }
 
 
@@ -90,9 +91,6 @@ body {
 
 .logo {}
 
-.top-nav {
-  border-radius: 0px;
-}
 
 .middle-nav {
   padding-top: 40px;
@@ -153,29 +151,39 @@ h1 {
 }
 
 .top-search {
-  animation: fadein 1000ms;
+  animation: fadein 100ms linear;
   margin-top: 10px;
+}
+
+.top-nav{
+  background-color: rgba(248, 248, 248, 0.5);
+}
+
+.top-nav-fade{
+  animation: fadein 300ms linear;
+  background-color: rgba(248, 248, 248, 1);
 }
 
 @keyframes fadein {
   from {
     opacity: .5;
+    background-color: rgba(248, 248, 248, 0.5);
   }
   to {
-    opacity: 1;
+   opacity: 1;
+    background-color: rgba(248, 248, 248, 1);
   }
 }
 
-.hidden {
-  transition: visibility 0s 2s, opacity 2s linear;
-}
 
 @keyframes fadeout {
   from {
     opacity: 0;
+    background-color: rgba(248, 248, 248, 0)
   }
   to {
     opacity: 1;
+    background-color: rgba(248, 248, 248, 1)
   }
 }
 
