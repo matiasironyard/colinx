@@ -52,10 +52,11 @@ class SideNav extends Component {
             </ul>
 
             <ul className="list-group">
+              <li role="separator" className="divider"></li>
               <li className="list-group-item">
                 <span className="dropdown">
                   <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <a href="#"><i className="fa fa-map-marker" aria-hidden="true"></i> #123456</a>
+                    <a href="#"><i className="fa fa-map-marker" aria-hidden="true"></i> 123456</a>
                     <span className="caret"></span>
                   </a>
                   <ul className="dropdown-menu">

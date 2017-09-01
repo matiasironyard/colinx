@@ -13,6 +13,10 @@ body {
   padding-right: 0;
 }
 
+.divider{
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
@@ -26,6 +30,7 @@ body {
 }
 
 #sidebar-wrapper {
+  text-align: center;
   z-index: 1000;
   position: fixed;
   left: 250px;
@@ -33,11 +38,11 @@ body {
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  box-shadow: 1px 1px 1px grey;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 2px 5px 5px grey;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -149,6 +154,16 @@ input {
 
 .middle-nav-input-group {
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.63)
+}
+
+.list-group{
+  padding-bottom: 0;
+}
+
+.list-group-item{
+  border-radius: 0;
+  border-right: 0;
+  border-left: 0;
 }
 
 h1 {
