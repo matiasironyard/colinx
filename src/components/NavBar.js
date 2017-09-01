@@ -49,7 +49,7 @@ class NavBar extends Component {
                   <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <a href="#">
                       <i className="fa fa-map-marker" aria-hidden="true"></i>
-                      #123456</a>
+                      123456</a>
                     <span className="caret"></span>
                   </a>
                   <ul className="dropdown-menu">
@@ -63,7 +63,7 @@ class NavBar extends Component {
                 </li>
                 <li className="dropdown">
                   <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <i className="fa fa-user-circle" aria-hidden="true"></i>
+                    <a href=""><i className="fa fa-user-circle" aria-hidden="true"></i></a>
                     <span className="caret"></span>
                   </a>
                   <ul className="dropdown-menu">
@@ -89,7 +89,7 @@ class NavBar extends Component {
             <div className="col-xs-4 col-xs-offset-4 col-lg-4 col-lg-offset-4">
               <h1 className="logo">Supplier</h1>
               <form className={`form-horizontal ${this.props.middleSearchBar}`}>
-                <div className="form-group">
+                <div className="form-group middle-search-form-group">
                   <div className="">
                     <div className="input-group middle-nav-input-group">
                       <input type="text" className="form-control" placeholder="Search"/>
@@ -111,27 +111,27 @@ class NavBar extends Component {
             <div className="row">
               <ul className="nav nav-pills nav-justified">
 
-                <li role="presentation">
+                <li className="nav-btn" role="presentation">
                   <a href="#">Item 1</a>
                 </li>
 
-                <li role="presentation">
+                <li className="nav-btn" role="presentation">
                   <a href="#">Item 2</a>
                 </li>
 
-                <li role="presentation">
+                <li className="nav-btn" role="presentation">
                   <a href="#">Item 3</a>
                 </li>
 
-                <li role="presentation">
+                <li className="nav-btn" role="presentation">
                   <a href="#">Item 4</a>
                 </li>
 
-                <li role="presentation">
+                <li className="nav-btn" role="presentation">
                   <a href="#">Item 5</a>
                 </li>
 
-                <li role="presentation">
+                <li className="nav-btn" role="presentation">
                   <a href="#">Item 6</a>
                 </li>
 

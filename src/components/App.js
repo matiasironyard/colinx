@@ -32,11 +32,15 @@ class App extends Component {
       if( $(this).scrollTop() < 50 ) {
         self.setState({topSearchBar: "hidden", middleSearchBar: "show"})
       }
-      if( $(this).scrollTop() > 300) {
+      if( $(this).scrollTop() > 285) {
         mn.addClass(mns);
-        self.setState({topSearchBar: "show", middleSearchBar: "hidden"})
-      } else{
+        $('.middle-search-form-group').fadeOut()
+        self.setState({ middleSearchBar: "hidden"})
+      } else if ($(this).scrollTop() > 215){
+        self.setState({topSearchBar: "show"})
+      } else {
         mn.removeClass(mns);
+        $('.middle-search-form-group').fadeIn()
         self.setState({topSearchBar: "hidden", middleSearchBar: "show"})
       }
     });

@@ -4,6 +4,10 @@ body {
   margin: 0 auto;
 }
 
+.fa{
+  font-size: 20px;
+}
+
 .no-gutters {
   padding-left: 0;
   padding-right: 0;
@@ -66,6 +70,11 @@ body {
   padding: 0;
 }
 
+.nav{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .navbar {
   border: 0px;
 }
@@ -90,12 +99,18 @@ body {
   border-radius: 0px;
 }
 
+.nav-btn{
+  border-right: 1px solid gainsboro;
+border-left: 1px solid gainsboro;
+}
+
 .main-nav-scrolled {
   position: fixed;
   width: 100%;
-  margin-top: -260px;
+  margin-top: -239px;
   z-index: 1;
   width: 102%;
+  left: 1px;
 }
 
 .navbar-form {
@@ -128,6 +143,10 @@ input {
   border-radius: 0;
 }
 
+.input-group-addon{
+  border-radius: 0;
+}
+
 .middle-nav-input-group {
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.63)
 }
@@ -138,7 +157,7 @@ h1 {
 }
 
 .top-search {
-  animation: fadein 300ms;
+  animation: fadein 800ms;
 }
 
 @keyframes fadein {
