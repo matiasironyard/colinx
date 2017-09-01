@@ -3,7 +3,6 @@ import '../styles/App.css';
 import Main from './Main.js'
 import SideNav from './SideNav.js'
 import NavBar from './NavBar.js'
-import $ from 'jquery'
 
 class App extends Component {
   constructor(props) {
@@ -27,7 +26,8 @@ class App extends Component {
     let middleNav = document.querySelector('.middle-nav');
 
     window.onscroll = () => {
-      if (middleNav.getBoundingClientRect().bottom <= 132) {
+        console.log(window.pageYOffset)
+      if (middleNav.getBoundingClientRect().bottom <= 220) {
         topNav.classList.add('top-nav-fade')
         this.setState({topSearchBar: "show"})
       } else {
@@ -35,7 +35,7 @@ class App extends Component {
         topNav.classList.remove('top-nav-fade')
         //topNav.style.backgroundColor = "rgba(248, 248, 248, 0.5)";
       }
-      if (window.pageYOffset > 270) {
+      if (window.pageYOffset > 530) {
         bottomNav.classList.add('fixed-bottom-nav');
       } else {
         bottomNav.classList.remove('fixed-bottom-nav');
@@ -44,7 +44,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('stat', this.state)
     return (
       <div className="container-fluid no-gutters">
         <div className="navbar-panel">

@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 class NavBar extends Component {
 
   render() {
-    console.log('props', this.props)
     return (
       <div>
 
@@ -11,7 +10,7 @@ class NavBar extends Component {
           <div className="container-fluid">
 
             <div className="navbar-header">
-              <span className="logo hidden-lg hidden-md hidden-sm">LOGO</span>
+              <span className="mobile-logo hidden-lg hidden-md hidden-sm">Shopsy</span>
               <button type="button" className="navbar-toggle collapsed">
                 <a href="#menu-toggle" className="btn btn-secondary menu-toggle" id="menu-toggle">
                   <span className="sr-only">Toggle navigation</span>
@@ -23,8 +22,8 @@ class NavBar extends Component {
 
             </div>
 
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <h4 className={`logo top-search col-xs-3 ${this.props.topSearchBar}`}>LOGO</h4>
+            <div className="collapse navbar-collapse">
+              <h2 className={`mobile-logo top-search col-xs-3 ${this.props.topSearchBar}`}>Shopsy</h2>
               <div className="col-xs-6  col-lg-6 ">
 
                 <form className={`form-horizontal navbar-left top-search ${this.props.topSearchBar}`}>
@@ -47,9 +46,9 @@ class NavBar extends Component {
               <ul className="nav navbar-nav navbar-right">
                 <li className="dropdown">
                   <a href="/" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <a href="/">
+                    <span href="/">
                       <i className="fa fa-map-marker" aria-hidden="true"></i>
-                      Store</a>
+                      Store</span>
                     <span className="caret"></span>
                   </a>
                   <ul className="dropdown-menu">
@@ -62,8 +61,8 @@ class NavBar extends Component {
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a href="/" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <a href=""><i className="fa fa-user-circle" aria-hidden="true"></i></a>
+                  <a className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span href="/"><i className="fa fa-user-circle" aria-hidden="true"></i></span>
                     <span className="caret"></span>
                   </a>
                   <ul className="dropdown-menu">
@@ -87,7 +86,7 @@ class NavBar extends Component {
         <nav className='navbar navbar-default  middle-nav hidden-xs'>
           <div className="container-fluid">
             <div className="col-xs-6 col-xs-offset-3 col-lg-6 col-lg-offset-3">
-              <h1 className="logo">LOGO</h1>
+              <h1 className="logo">Shopsy</h1>
               <form className={`form-horizontal ${this.props.middleSearchBar}`}>
                 <div className="form-group middle-search-form-group">
                   <div className="">
@@ -112,27 +111,27 @@ class NavBar extends Component {
               <ul className="nav nav-pills nav-justified">
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Link</a>
+                  <a className="bottom-nav-btn" href="/">Link</a>
                 </li>
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Link</a>
+                  <a className="bottom-nav-btn"  href="/">Link</a>
                 </li>
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Link</a>
+                  <a className="bottom-nav-btn"  href="/">Link</a>
                 </li>
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Link</a>
+                  <a className="bottom-nav-btn"  href="/">Link</a>
                 </li>
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Link</a>
+                  <a className="bottom-nav-btn"  href="/">Link</a>
                 </li>
 
                 <li className="nav-btn" role="presentation">
-                  <a href="/">Link</a>
+                  <a className="bottom-nav-btn"  href="/">Link</a>
                 </li>
 
               </ul>
