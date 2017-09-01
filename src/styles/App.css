@@ -40,6 +40,8 @@ h3 {
 }
 
 #wrapper {
+  position: relative;
+  z-index: 0;
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -52,6 +54,7 @@ h3 {
 }
 
 #sidebar-wrapper {
+  position: absolute;
   text-align: center;
   z-index: 1000;
   position: fixed;
