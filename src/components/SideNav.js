@@ -26,27 +26,27 @@ class SideNav extends Component {
             <ul className="list-group">
 
               <li className="list-group-item">
-                <a href="/">Item 1</a>
+                <a href="/">Link</a>
               </li>
 
               <li className="list-group-item">
-                <a href="/">Item 2</a>
+                <a href="/">Link</a>
               </li>
 
               <li className="list-group-item">
-                <a href="/">Item 3</a>
+                <a href="/">Link</a>
               </li>
 
               <li className="list-group-item">
-                <a href="/">Item 4</a>
+                <a href="/">Link</a>
               </li>
 
               <li className="list-group-item">
-                <a href="/">Item 5</a>
+                <a href="/">Link</a>
               </li>
 
               <li className="list-group-item">
-                <a href="/">Item 6</a>
+                <a href="/">Link</a>
               </li>
 
             </ul>
