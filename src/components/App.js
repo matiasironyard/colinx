@@ -6,48 +6,46 @@ import NavBar from './NavBar.js'
 import $ from 'jquery'
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
+    this.state = {
       topSearchBar: "hidden",
-      middleSearchBar: "show",
+      middleSearchBar: "show"
     }
   }
 
   componentDidMount() {
-    $("#menu-toggle").click((e)=> {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
+    let menuToggle = document.querySelector(".menu-toggle");
+    let wrapper = document.getElementById("wrapper");
+
+    menuToggle.addEventListener('click', evt => {
+      wrapper.classList.toggle('toggled');
     });
 
-    let  mn = $(".bottom-nav"),
-        src = $(".top-search"),
-        mdl = $(".middle-nav"),
-        mns = "main-nav-scrolled",
-        hdr = $('.middle-nav').height();
-        console.log('hdr', hdr)
-        let self = this;
+    let self = this;
 
-    $(window).scroll(function() {
-      if( $(this).scrollTop() < 50 ) {
-        self.setState({topSearchBar: "hidden", middleSearchBar: "show"})
-      }
-      if( $(this).scrollTop() > 285) {
-        mn.addClass(mns);
-        $('.middle-search-form-group').fadeOut()
-        self.setState({ middleSearchBar: "hidden"})
-      } else if ($(this).scrollTop() > 215){
+    let topNav = document.querySelector('.top-nav');
+    let bottomNav = document.querySelector('.bottom-nav');
+    let middleNav = document.querySelector('.middle-nav');
+
+    window.onscroll = () => {
+      if (middleNav.getBoundingClientRect().bottom <= 132) {
+        topNav.style.backgroundColor = "#f8f8f8";
         self.setState({topSearchBar: "show"})
       } else {
-        mn.removeClass(mns);
-        $('.middle-search-form-group').fadeIn()
-        self.setState({topSearchBar: "hidden", middleSearchBar: "show"})
+        self.setState({topSearchBar: "hidden"})
+        topNav.style.backgroundColor = "rgba(248, 248, 248, 0.5)";
       }
-    });
-
+      if (window.pageYOffset > 270) {
+        bottomNav.classList.add('fixed-bottom-nav');
+      } else {
+        bottomNav.classList.remove('fixed-bottom-nav');
+      }
+    }
   }
 
   render() {
+    console.log('stat', this.state)
     return (
       <div className="container-fluid no-gutters">
         <div className="navbar-panel">
