@@ -22,8 +22,6 @@ class App extends Component {
       wrapper.classList.toggle('toggled');
     });
 
-    let self = this;
-
     let topNav = document.querySelector('.top-nav');
     let bottomNav = document.querySelector('.bottom-nav');
     let middleNav = document.querySelector('.middle-nav');
@@ -31,9 +29,9 @@ class App extends Component {
     window.onscroll = () => {
       if (middleNav.getBoundingClientRect().bottom <= 132) {
         topNav.style.backgroundColor = "#f8f8f8";
-        self.setState({topSearchBar: "show"})
+        this.setState({topSearchBar: "show"})
       } else {
-        self.setState({topSearchBar: "hidden"})
+        this.setState({topSearchBar: "hidden"})
         topNav.style.backgroundColor = "rgba(248, 248, 248, 0.5)";
       }
       if (window.pageYOffset > 270) {
