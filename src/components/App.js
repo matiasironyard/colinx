@@ -26,16 +26,32 @@ class App extends Component {
     let middleNav = document.querySelector('.middle-nav');
     let contentWrapper = document.getElementById('page-content-wrapper');
 
+    topNav.style.backgroundColor = "rgba(75, 172, 207, 0.5)"
+
     window.onscroll = () => {
-      if (middleNav.getBoundingClientRect().bottom <= 220) {
-        topNav.classList.add('top-nav-fade')
+
+      let getHeight = (div) => {
+        return Math.max(div.scrollHeight, div.offsetHeight, div.clientHeight);
+      };
+
+      let rect = (div) => {
+        return div.getBoundingClientRect();
+      }
+      let topNavHeight = getHeight(topNav);
+      let bottomNavPosition = rect(middleNav).bottom - topNavHeight;
+      let changeRate = (bottomNavPosition / document.body.offsetHeight * 100);
+      middleNav.style.opacity = (changeRate / 100);
+      topNav.style.backgroundColor = "rgba(75, 172, 207, " + (1 - changeRate / 100) + ")";
+
+      if (middleNav.getBoundingClientRect().bottom <= 265) {
+        //topNav.classList.add('top-nav-fade')
         this.setState({topSearchBar: "show"})
       } else {
         this.setState({topSearchBar: "hidden"})
-        topNav.classList.remove('top-nav-fade')
+        //topNav.classList.remove('top-nav-fade')
         //topNav.style.backgroundColor = "rgba(248, 248, 248, 0.5)";
       }
-      if (window.pageYOffset >= 515) {
+      if (bottomNavPosition <= 0) {
         bottomNav.classList.add('fixed-bottom-nav');
         contentWrapper.style.marginTop = "60px"
       } else {

@@ -51,8 +51,7 @@ h3 {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  //margin-top: 60px;
+  transition: all 0.5s ease; //margin-top: 60px;
 }
 
 #wrapper.toggled {
@@ -106,7 +105,7 @@ h3 {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: darkorange;
+  color: darkorange;
 }
 
 
@@ -140,10 +139,11 @@ h3 {
 .logo {}
 
 .middle-nav {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   padding-bottom: 150px;
+  margin-top: 2px;
   background-color: white;
-  background-image: url("http://voguepayblog.com/wp-content/uploads/2016/12/eCommerce-growth-with-Voguepay-2.png"); //background-image: url("../images/gears.png");
+  background-image: url(http://voguepayblog.com/wp-content/uploads/2016/12/eCommerce-growth-with-Voguepay-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -201,27 +201,29 @@ h1 {
 }
 
 .top-search {
-  animation: fadein 100ms linear;
+  animation: fadein 500ms linear;
   margin-top: 10px;
+  opacity: 1;
 }
 
 .top-nav {
-  background-color: rgba(75, 172, 207, 0.5)
+  //background-color: rgba(75, 172, 207, 0.5)
 }
 
+
+/*
 .top-nav-fade {
   animation: fadein 300ms linear;
-  background-color: rgba(75, 172, 207, 1)
+  //background-color: rgba(75, 172, 207, 1)
 }
+*/
 
 @keyframes fadein {
   from {
-    opacity: .5;
-    background-color: rgba(75, 172, 207, 0.5)
+    opacity: 0; //background-color: rgba(75, 172, 207, 0.5)
   }
   to {
-    opacity: 1;
-    background-color: rgba(75, 172, 207, 1)
+    opacity: 1; //background-color: rgba(75, 172, 207, 1)
   }
 }
 
