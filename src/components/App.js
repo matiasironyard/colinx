@@ -24,9 +24,9 @@ class App extends Component {
     let topNav = document.querySelector('.top-nav');
     let bottomNav = document.querySelector('.bottom-nav');
     let middleNav = document.querySelector('.middle-nav');
+    let contentWrapper = document.getElementById('page-content-wrapper');
 
     window.onscroll = () => {
-        console.log(window.pageYOffset)
       if (middleNav.getBoundingClientRect().bottom <= 220) {
         topNav.classList.add('top-nav-fade')
         this.setState({topSearchBar: "show"})
@@ -35,10 +35,12 @@ class App extends Component {
         topNav.classList.remove('top-nav-fade')
         //topNav.style.backgroundColor = "rgba(248, 248, 248, 0.5)";
       }
-      if (window.pageYOffset > 530) {
+      if (window.pageYOffset >= 515) {
         bottomNav.classList.add('fixed-bottom-nav');
+        contentWrapper.style.marginTop = "60px"
       } else {
         bottomNav.classList.remove('fixed-bottom-nav');
+        contentWrapper.style.marginTop = "0px"
       }
     }
   }
