@@ -28,7 +28,7 @@ h3 {
   font-size: 20px;
   padding: 0 5px 0 5px;
   color: darkorange;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.51);
 }
 
 .caret {
@@ -52,11 +52,11 @@ h3 {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  margin-top: 60px;
+  //margin-top: 60px;
 }
 
 #wrapper.toggled {
-  padding-left: 250px;
+  //padding-left: 250px;
 }
 
 #sidebar-wrapper {
@@ -68,12 +68,13 @@ h3 {
   width: 0;
   height: 100%;
   margin-left: -250px;
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   box-shadow: 2px 5px 5px grey;
+  background-color: #fff;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -102,6 +103,10 @@ h3 {
 
 .navbar-default {
   //background-color: rgba(248, 248, 248, 0.5);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: darkorange;
 }
 
 
